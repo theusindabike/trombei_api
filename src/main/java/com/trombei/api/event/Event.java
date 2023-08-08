@@ -1,7 +1,5 @@
 package com.trombei.api.event;
 
-
-import java.time.Instant;
 import java.util.Date;
 
 import org.springframework.data.annotation.CreatedDate;
@@ -35,8 +33,6 @@ public class Event {
 
     @Column(length=255)
     private String description;
-
-    // private List<User> owners;
 
     @Enumerated(EnumType.STRING)
     private EventStatus status;
